@@ -1,0 +1,32 @@
+.allHeader {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #1F343E;
+  opacity: 1;
+}
+
+.container {
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigationBlock {
+  width: 490px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.linkNav {
+  color: var(--text-color-navigation);
+  font-size: 20px;
+}
+
+
+
