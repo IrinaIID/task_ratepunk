@@ -4,6 +4,8 @@
   --text-color-main: #1F343E;
   --accent-color: #4EB3E3;
   --width-container-desktop: 1120px;
+  --width-container-desktop-small: 1000px;
+  --width-container-mobile: 343px;
 }
 
 * {

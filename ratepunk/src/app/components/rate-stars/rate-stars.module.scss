@@ -10,4 +10,9 @@
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+    filter: invert(0.3);
+  }
 }

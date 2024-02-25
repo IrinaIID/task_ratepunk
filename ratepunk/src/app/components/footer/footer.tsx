@@ -59,6 +59,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
+          <p className={styles.descriptionInfoMobile}>
+            {`© 2021 Ratepunk. All Rights Reserved.`}
+          </p>
       </div>
     </div>
   );

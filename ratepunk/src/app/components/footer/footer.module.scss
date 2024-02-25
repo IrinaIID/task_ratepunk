@@ -17,15 +17,52 @@
   justify-content: space-between;
   align-items: start;
   padding: 64px 0 58px 0;
+
+  @media (max-width: 1200px) {
+    width: var(--width-container-desktop-small);
+  }
+
+  @media (max-width: 1050px) {
+    width: 400px;
+    flex-direction: column;
+    // align-items: center;
+    align-content: start;
+  }
+
+  @media (max-width: 580px) {
+    width: 311px;
+    flex-direction: column;
+    // align-items: center;
+    align-content: start;
+    padding: 48px 0 48px 0;
+
+  }
 }
 
 .descriptionText {
   max-width: 540px;
   margin: 32px 0 46px 0;
+
+  @media (max-width: 580px) {
+    max-width: 311px;
+  }
 }
 
 .descriptionInfo {
   color: #6D7A80;
+
+  @media (max-width: 1050px) {
+    display: none;
+  }
+}
+
+.descriptionInfoMobile {
+  margin-top: 48px;
+
+  @media (min-width: 1050px) {
+    color: #6D7A80;
+    display: none;
+  }
 }
 
 .footerNameBlock {
@@ -45,6 +82,16 @@
   &:hover {
     color: var(--accent-color);
   }
+
+  @media (max-width: 1050px) {
+    margin-top: 10px;
+  }
+}
+
+.blockContacts {
+  @media (max-width: 1050px) {
+    margin-top: 40px;
+  }
 }
 
 .blockContactEmail {
@@ -54,6 +101,10 @@
 
 .contactEmail {
   padding: 0 0 70px 16px;
+
+  @media (max-width: 1050px) {
+    padding: 0 0 32px 16px;
+  }
 }
 
 .blockSocialIcons {

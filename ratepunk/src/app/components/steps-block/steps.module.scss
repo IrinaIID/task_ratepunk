@@ -1,36 +1,78 @@
 .allStepsBlock {
   margin-left: 136px;
+
+  @media (max-width: 1200px) {
+    margin-left: 50px;
+  }
+
+  @media (max-width: 1050px) {
+    margin-top: 64px;
+    margin-left: 0;
+  }
 }
 
 .stepBlock{
   display: flex;
   align-items: center;
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+  }
 }
 
 .stepBlockWithMargin {
   margin: 64px 0;
+
+  @media (max-width: 1050px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .descriptionStep {
   margin-left: 56px;
+
+  @media (max-width: 1050px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
 }
 
 .descriptionStep2 {
   margin-right: 56px;
+
+  @media (max-width: 1050px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
 }
 
 .numStep {
   color: var(--accent-color);
   font-weight: 700;
   letter-spacing: 1.6px;
+
+  @media (max-width: 1050px) {
+    margin-top: 30px;
+  }
 }
 
 .cardName {
-  margin: 16px 0;
+  margin: 10px 0;
 }
 
 .infoStep {
   max-width: 256px;
   font-size: 20px;
   line-height: 32px;
+
+  @media (max-width: 1050px) {
+    max-width: 343px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
