@@ -12,7 +12,7 @@
 }
 
 .container {
-  width: 1120px;
+  width: var(--width-container-desktop);
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -41,6 +41,10 @@
 
 .linkNav {
   margin-top: 16px;
+
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 .blockContactEmail {

@@ -11,7 +11,7 @@ export default function Header() {
           <LogoSvg />
         </a>
       <div className={styles.navigationBlock}>
-        <Link href={'/'} className={styles.linkNav}>Chrome Extention</Link>
+        <Link href={'/'} className={styles.linkNav}>Chrome Extension</Link>
         <Link href={'price'} className={styles.linkNav}>Price Comparison</Link>
         <Link href={'blog'} className={styles.linkNav}>Blog</Link>
       </div>

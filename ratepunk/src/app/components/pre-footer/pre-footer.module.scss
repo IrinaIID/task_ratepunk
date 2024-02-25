@@ -1,0 +1,50 @@
+.allPreFooter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background: #45565E 0% 0% no-repeat padding-box;
+  border: 1px solid #1F343E;
+}
+
+.container {
+  width: var(--width-container-desktop);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.cardAppBlock {
+  width: 312px;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: #45565E;
+  border: 1px solid #1F343E;
+  border-radius: 16px;
+  padding-left: 24px;
+}
+
+.describeCard,
+.describecardSpan {
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+.describecardSpan {
+  font-weight: 700;
+}
+
+.rateBlock {
+  display: flex;
+}
+
+.rateText {
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 16px;
+}

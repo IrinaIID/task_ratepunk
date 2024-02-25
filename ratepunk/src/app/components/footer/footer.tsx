@@ -28,7 +28,7 @@ export default function Footer() {
           <h3 className={styles.footerNameBlock}>QUICK LINKS</h3>
           <div className={styles.navigationLinks}>
             <Link href={'price'} className={styles.linkNav}>Price Comparison</Link>
-            <Link href={'/'} className={styles.linkNav}>Chrome Extention</Link>
+            <Link href={'/'} className={styles.linkNav}>Chrome Extentson</Link>
             <Link href={'/'} className={styles.linkNav}>How It Works</Link>
             <Link href={'blog'} className={styles.linkNav}>Ratepunk Blog</Link>
             <Link href={'/'} className={styles.linkNav}>Privacy Policy</Link>

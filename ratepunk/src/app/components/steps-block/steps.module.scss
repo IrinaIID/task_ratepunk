@@ -1,0 +1,36 @@
+.allStepsBlock {
+  margin-left: 136px;
+}
+
+.stepBlock{
+  display: flex;
+  align-items: center;
+}
+
+.stepBlockWithMargin {
+  margin: 64px 0;
+}
+
+.descriptionStep {
+  margin-left: 56px;
+}
+
+.descriptionStep2 {
+  margin-right: 56px;
+}
+
+.numStep {
+  color: var(--accent-color);
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
+
+.cardName {
+  margin: 16px 0;
+}
+
+.infoStep {
+  max-width: 256px;
+  font-size: 20px;
+  line-height: 32px;
+}

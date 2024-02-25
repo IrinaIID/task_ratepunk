@@ -1,0 +1,26 @@
+.inputForm {
+  width: 100%;
+  background: #FFFFFF;
+  background: url('../../../assets/email.png') no-repeat center left;
+  background-position: 20px;   
+  outline: none;
+  border: 1px solid #1F343E;
+  border-radius: 8px;
+  color: #6D7A80;
+  font-size: 20px;
+  padding: 20px 20px 20px 60px;
+}
+
+.buttonForm {
+  width: 100%;
+  background: var(--accent-color);
+  border: 1px solid #1F343E;
+  border-radius: 8px;
+  padding: 20px 0;
+  margin-top: 16px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}

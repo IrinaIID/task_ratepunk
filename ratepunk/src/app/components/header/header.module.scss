@@ -7,11 +7,10 @@
   align-items: center;
   background-color: #FFFFFF;
   border-bottom: 1px solid #1F343E;
-  opacity: 1;
 }
 
 .container {
-  width: 1120px;
+  width: var(--width-container-desktop);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +25,10 @@
 .linkNav {
   color: var(--text-color-navigation);
   font-size: 20px;
+
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 
