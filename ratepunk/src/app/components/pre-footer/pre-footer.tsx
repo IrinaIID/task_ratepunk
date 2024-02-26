@@ -1,7 +1,7 @@
 import AppleSvg from '@/assets/svg/apple';
-import styles from './pre-footer.module.scss';
 import ChromeSvg from '@/assets/svg/chrome';
 import AllStars from '../rate-stars/rate-stars';
+import styles from './pre-footer.module.scss';
 
 export default function PreFooter() {
   return (

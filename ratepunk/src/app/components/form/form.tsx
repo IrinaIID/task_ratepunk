@@ -1,7 +1,7 @@
 'use client';
+import SuccessSvg from '@/assets/svg/success';
 import { ChangeEvent, FormEvent, useState } from 'react';
 import styles from './form.module.scss';
-import SuccessSvg from '@/assets/svg/success';
 
 export default function Form() {
 
@@ -10,7 +10,6 @@ export default function Form() {
   const [valueInput, setValueInput] = useState<string | null>(null);
   const [error, setError] = useState<boolean | null>(false);
   const [isLink, setIsLink] = useState<boolean>(false);
-
 
   function onChangeText(e: ChangeEvent<HTMLInputElement>) {
     const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{1,})$/iu;
@@ -32,12 +31,6 @@ export default function Form() {
   function onSubmitLink(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
   }
-
-
-
-
-
-
 
   return (
     <>
@@ -82,7 +75,6 @@ export default function Form() {
               Copy
             </button>
           </form>
-
         </div>
       }
     </>

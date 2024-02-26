@@ -1,19 +1,19 @@
 'use client';
-import styles from './header.module.scss';
-import LogoSvg from '../../../assets/svg/logo';
-import Link from 'next/link';
-import MenuSvg from '@/assets/svg/menu';
 import CloseSvg from '@/assets/svg/close';
+import MenuSvg from '@/assets/svg/menu';
+import Link from 'next/link';
 import { useState } from 'react';
+import LogoSvg from '../../../assets/svg/logo';
+import styles from './header.module.scss';
 
 
 export default function Header() {
 
-  const [menuPopup, setMenuPopup] = useState(false)
+  const [menuPopup, setMenuPopup] = useState(false);
 
   return (
     <>
-      <div className={styles.allHeader}>
+      <div className={menuPopup ? `${styles.allHeader} ${styles.noAllHeader}` : `${styles.allHeader}`}>
         <div className={styles.container}>
           <a href='https://www.ratepunk.com/'>
             <LogoSvg />

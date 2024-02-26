@@ -1,12 +1,12 @@
-import styles from './footer.module.scss';
-import LogoSvg from '../../../assets/svg/logo';
-import Link from 'next/link';
 import EmailFooterSvg from '@/assets/svg/email-footer';
-import InstagramSvg from '@/assets/svg/instagram';
 import FacebookSvg from '@/assets/svg/fb';
 import LinkedinSvg from '@/assets/svg/in';
-import TwitterSvg from '@/assets/svg/twitter';
+import InstagramSvg from '@/assets/svg/instagram';
 import TiktokSvg from '@/assets/svg/tiktok';
+import TwitterSvg from '@/assets/svg/twitter';
+import Link from 'next/link';
+import LogoSvg from '../../../assets/svg/logo';
+import styles from './footer.module.scss';
 
 
 export default function Footer() {

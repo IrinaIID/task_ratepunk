@@ -1,8 +1,8 @@
-import { Caveat_Brush } from "next/font/google";
-import InviteSvg from '@/assets/svg/invite';
-import styles from './steps.module.scss';
 import CollectSvg from "@/assets/svg/collect";
+import InviteSvg from '@/assets/svg/invite';
 import VoucherSvg from "@/assets/svg/voucher";
+import { Caveat_Brush } from "next/font/google";
+import styles from './steps.module.scss';
 
 const caveat = Caveat_Brush({
   subsets: ['latin'],

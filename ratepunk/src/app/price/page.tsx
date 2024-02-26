@@ -1,10 +1,16 @@
+import Footer from "../components/footer/footer";
 import Header from "../components/header/heder";
+import styles from './page.module.scss';
+
 
 export default function Price() {
   return (
-    <main>
+    <div className={styles.allPrice}>
       <Header />
-      <p>Price</p>
-    </main>
+      <main className={styles.mainPrice}>
+        <h1 className={styles.priceTitl}>PRICE RATEPUNK</h1>
+      </main>
+      <Footer />
+    </div>
   );
 }
