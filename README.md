@@ -1,7 +1,7 @@
 # task_ratepunk
 test task for RATEPUNK
 
-Technologies used in this project: React, Redux, TypeScript, SCSS, HTML.
+Technologies used in this project: Next.js, Typescript, Sass modules.
 
 ### Deploy
 
