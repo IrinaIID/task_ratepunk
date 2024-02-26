@@ -1,0 +1,70 @@
+.allHome {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.mainHome {
+  width: var(--width-container-desktop);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 0;
+
+  @media (max-width: 1200px) {
+    width: var(--width-container-desktop-small);
+  }
+
+  @media (max-width: 1050px) {
+    flex-direction: column;;
+  }
+}
+
+.cardEmailBlock {
+  max-width: 544px;
+  background: #F8F4F9 0% 0% no-repeat padding-box;
+  border: 1px solid #1F343E;
+  border-radius: 16px;
+  padding: 64px;
+
+  @media (max-width: 600px) {
+    width: var(--width-container-mobile);
+    padding: 32px 16px;
+  }
+}
+
+.cardName {
+  max-width: 416px;
+  font-size: 48px;
+  line-height: 72px;
+
+  @media (max-width: 600px) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+.descriptionCardEmail {
+  max-width: 416px;
+  font-size: 20px;
+  line-height: 32px;
+  padding: 32px 0 64px 0;
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+    padding: 32px 0 24px 0;
+  }
+}
+
+.infoCardEmail {
+  margin-top: 153px;
+  color: #6D7A80;
+  font-size: 16px;
+
+  @media (max-width: 600px) {
+    margin-top: 80px;
+  }
+}
