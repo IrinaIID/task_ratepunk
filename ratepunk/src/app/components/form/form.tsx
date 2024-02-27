@@ -21,15 +21,28 @@ export default function Form() {
     setError(!isEmail)
   }
  
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+
     event.preventDefault()
     if (!error && valueInput) {
       setIsLink(true)
+
+      await fetch("https://api.jsonbin.io/v3/b/65de20c11f5677401f353cc6", {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Master-Key": "$2a$10$mTdOJc9tremenuzOJJHATOhUiA3yesCF/pxTFta0VyvjpgWoewJb.",
+          "X-Access-Key": "$2a$10$MhdH3eLyE1VMos.2sGnbE.L1ZSSjtQaYs6jQtqt6beGI3jy3JpIr."
+        },
+        body: JSON.stringify({ email: valueInput }),
+      });
     }
   }
 
-  function onSubmitLink(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault()
+function onSubmitLink(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
   }
 
   return (
@@ -40,10 +53,11 @@ export default function Form() {
         }
         <form 
           className={styles.allForm}
-          onSubmit={e => onSubmit(e)}
+          onSubmit={onSubmit}
         >
           <input 
             type='email'
+            name='email'
             className={styles.inputForm}
             placeholder='Enter your email address'
             onChange={e => onChangeText(e)} 
